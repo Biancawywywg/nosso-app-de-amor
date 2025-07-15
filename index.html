@@ -311,6 +311,24 @@ function esqueceuSenha() {
       localStorage.removeItem('musica');
     }
     window.onload = carregarTextos;
+    <script>
+  const botao = document.getElementById('temaBtn');
+  const corpo = document.body;
+
+  botao.addEventListener('click', () => {
+    corpo.classList.toggle('dark');
+    corpo.classList.toggle('light');
+
+    if (corpo.classList.contains('dark')) {
+      botao.textContent = '☀️ Modo Claro';
+    } else {
+      botao.textContent = '🌙 Modo Escuro';
+    }
+  });
+</script>
+</body>
+</html>
+
   </script>
 
 </script>
